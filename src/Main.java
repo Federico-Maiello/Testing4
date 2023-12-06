@@ -20,4 +20,17 @@ public class Main {
         System.out.println("Giorno: " + giorno);
         System.out.println("Giorno della settimana: " + giornoSettimana);
     }
+
+    public static int getYear(LocalDateTime date) {
+        return date.getYear();
+    }
+    public static int getMonth(LocalDateTime month) {
+        return month.getMonthValue();
+    }
+    public static int getDayOfMonth(LocalDateTime day) {
+        return day.getDayOfMonth();
+    }
+    public static String getDayOfWeek(LocalDateTime dayOfWeek) {
+        return String.valueOf(dayOfWeek.getDayOfWeek());
+    }
 }
